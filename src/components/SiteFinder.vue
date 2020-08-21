@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h2
+    <!-- <h2
       :id="titleId"
       class="bmn"
     >
-      Access center sites
-    </h2>
+      Access Center sites
+    </h2> -->
     <div>
       <v-client-table
         :ref="titleId"
