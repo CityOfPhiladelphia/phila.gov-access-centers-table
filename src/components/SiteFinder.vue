@@ -4,7 +4,7 @@
       :id="titleId"
       class="bmn"
     >
-      {{ title.charAt(0).toUpperCase() + title.slice(1) }}
+      Access center sites
     </h2>
     <div>
       <v-client-table
@@ -68,7 +68,7 @@ export default {
         perPageValues: [],
       },
       titleId: this.titleHash.split(' ').join('-').toLowerCase(),
-      title: "document table",
+      title: "Access centers",
     };
   },
 };
