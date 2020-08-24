@@ -59,7 +59,8 @@ export default {
   },
   data: function() {
     return {
-      columns: [ 'Asset_Name', 'Address' ],
+      columns: [ 'Site name', 'Address', 'ZIP Code'],
+      // column_titles: ['Access Center', 'Address', 'ZIP Code'],
       options: {
         texts: {
           filterPlaceholder: "Begin typing to filter by site name or address",

@@ -61,6 +61,15 @@ export default {
         let tempData = result.data.features.map(item => {
           return item.attributes;
         });
+
+      tempData.forEach(function(site) {
+          site['Site name'] = site['Asset_Name'];
+          delete site['Asset_Name'];
+
+          site['ZIP Code'] = site['CODE'];
+          delete site['CODE'];
+        });
+
      
         vm.documentTables = tempData;
         return true;
